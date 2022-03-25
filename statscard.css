@@ -1,0 +1,204 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+} 
+
+/*Fonts*/
+/*	font-family: 'Inter', sans-serif;
+	font-family: 'Lexend Deca', sans-serif;*/ 
+
+/*Colours*/
+/*hsl(233, 47%, 7%); FOR THE WHOLE BACKGROUND*/
+/*hsl(244, 38%, 16%); FOR THE CARD BACKGROUND*/
+/*hsl(277, 64%, 61%); FOR THE "INSIGHTS" WORD*/
+/*#fff*/
+/*hsla(0, 0%, 100%, 0.75); SLIGHT WHITE/GRAY*/
+/*hsla(0, 0%, 100%, 0.6); SLIGHT WHITE/GRAY*/
+
+
+/*MOBILE FIRST CARD*/ 
+
+body {
+	background-color: hsl(233, 47%, 7%);
+} 
+
+.card-container {
+	display: flex;
+	margin: 40px auto;
+	width: 21.25em; /*340px*/
+	flex-direction: column;
+	background-color: hsl(244, 38%, 16%);
+	border-radius: 10px;
+}
+
+.image {
+	width: inherit;
+	height: 16em; /*240px*/
+	/*background-color: hsl(277, 64%, 61%);*/
+}
+
+.image img {
+	border-radius: 10px 10px 0px 0px;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;	
+} 
+
+.firstp { /* position for the paragraph with the word "insight" in it*/
+	margin-top: 1.75em; 
+}
+
+.firstp p {
+	color: #fff;  /*paragraph with the word "insight" in it*/
+	font-family: 'Inter', sans-serif;
+	font-weight: 700;
+	font-size: 1.75rem;
+	text-align: center;
+	padding: 0em 1em;
+}
+
+.coloured-word {
+	color: hsl(277, 64%, 61%);
+}
+
+.secondp { /*position for the paragraph in grey colour*/
+	margin-top: 1.1em; 
+}
+
+.secondp p { /*for the paragraph in grey colour*/
+	color: hsla(0, 0%, 100%, 0.6);
+	font-family: 'Inter', sans-serif;
+	font-size: 0.9475rem;
+	line-height: 1.4em;
+	text-align: center;
+	padding: 0em 2.4em;
+}
+
+.nbox {  /*first box with numbers and "descriptions"*/
+	margin-top: 2.4em;
+}
+
+.nbox p { /*for big numbers*/
+	color: #fff;
+	margin-bottom: 0.5rem;
+	font-family: 'Inter', sans-serif;
+	font-weight: 700;
+	text-align: center;
+	font-size: 1.75rem;
+	line-height: 1.6rem;
+}
+
+.subtitle {  /*for "descriptions"*/
+	color: hsla(0, 0%, 100%, 0.6);
+	font-family: 'Lexend Deca', sans-serif;
+	text-align: center;
+	font-size: 0.9475rem;
+} 
+
+.nbox2 { /*second number and description*/
+	margin-top: 2em; 
+}
+
+.nbox2 p { 
+	color: #fff;
+	margin-bottom: 0.5rem;
+	font-family: 'Inter', sans-serif;
+	font-weight: 700;
+	text-align: center;
+	font-size: 1.75rem;
+	line-height: 1.6rem;
+} 
+
+.nbox3 {
+	margin-top: 2em;
+}
+
+.nbox3 p {
+	color: #fff;
+	margin-bottom: 0.5rem;
+	font-family: 'Inter', sans-serif;
+	font-weight: 700;
+	text-align: center;
+	font-size: 1.75rem;
+	line-height: 1.6rem;
+}
+
+.final-subtitle {  /*this one is different just because I needed a margin at the bottom*/
+	margin-bottom: 2.5em;
+	color: hsla(0, 0%, 100%, 0.6);
+	font-family: 'Lexend Deca', sans-serif;
+	text-align: center;
+	font-size: 0.9475rem;
+}
+
+@media screen and (min-width: 375px){
+	* {
+		box-sizing: border-box;
+		padding: 0px;
+		margin: 0px;
+	}
+
+	body {
+		background-color: hsl(233, 47%, 7%);
+	} 
+
+	.card-container {  
+		display: grid;
+		width: 900px;
+		margin-top: 100px;
+		grid-template-columns: 450px 450px;
+		grid-template-rows: 360px;
+	}
+
+	.image{
+		order: 1;
+		width: 100%;
+		height: 100%;
+	}
+
+	.image img {
+		border-radius: 0px 7px 7px 0px;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	} 
+
+	.container1 {
+		margin: 3em;
+	}
+
+	.firstp {
+		margin: 0em;
+	}
+
+	.firstp p {
+		padding: 0em;
+		text-align: left;
+	}
+
+	.secondp p {
+		font-size: 0.9475rem;
+		line-height: 1.4em;
+		text-align: left;
+		padding: 0.5em 0em;
+	}
+
+	.nbox-container { 
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin-top: 2.3em;
+	}
+
+	.nbox, .nbox2, .nbox3 {
+		margin: 0;
+		padding: 0;
+	}
+
+	.subtitle {
+		margin: 0;
+		padding: 0;
+	}
+
+}
